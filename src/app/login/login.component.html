@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-4">
+      <div class="card login-card">
+        <div class="card-header card-header-primary card-style text-center">
+          <h4 class="card-title">Login</h4>
+        </div>
+        <div class="card-body">
+          <form class="">
+            <br>
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input id="userName" type="text" class="form-control login-input-username" name="userName" placeholder="User Name" [(ngModel)]="login.userName">
+                </div>
+                <br><br>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <input id="password" type="password" class="form-control login-input-password" name="password"  placeholder="Password" [(ngModel)]="login.password">
+                  </div>
+                  <br>
+                  <hr>
+              <div class="form-group">
+                <a href="#">Forgot Password?</a>
+                      <button id="btnLogin" type="submit" class="btn btn-primary btn-circle float-right" (click)= "getLoginAuth()">Login</button>
+                </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
